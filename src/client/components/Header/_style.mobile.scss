@@ -1,0 +1,27 @@
+.s-header {
+  height: 100px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-direction: column-reverse;
+
+  &__navigation,
+  &__social-links {
+    display: none
+  }
+
+  &__logotype {
+    height: 12px;
+    width: 88%;
+    max-width: 440px;
+    margin-top: 0;
+    margin-left: $spacing-16;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &--stickly {
+    flex-direction: column-reverse;
+  }
+}

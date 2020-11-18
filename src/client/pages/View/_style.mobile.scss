@@ -1,0 +1,5 @@
+.view {
+  height: auto;
+  overflow: visible;
+  @include flex(flex-start, center, column);
+}
