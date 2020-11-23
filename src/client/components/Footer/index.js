@@ -11,7 +11,7 @@ const version = {
 const Footer = () => (
   <section className="footer">
     <h3>
-      Dedicated to all of us who learn through passion.
+      Dedicated to all of us who learn by passion
     </h3>
     <p>
       <a
