@@ -1,9 +1,0 @@
-@import "../../assets/sass/_variables";
-
-// Desktop
-@import "./style.desktop";
-
-// Mobile
-@include media($media-size-mobile) {
-  @import "./style.mobile";
-}

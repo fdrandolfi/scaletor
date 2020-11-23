@@ -1,10 +1,4 @@
-// Commons
-@import "../../assets/sass/_commons.scss";
+@import "../../assets/sass/commons";
 
-// Desktop
-@import "./style.desktop";
-
-// Mobile
-@include media($media-size-mobile) {
-  @import "./style.mobile";
+.home {
 }

@@ -4,7 +4,7 @@
 $typography: "Lato", sans-serif;
 
 // Colors
-@import "./colors";
+@import "_colors";
 
 // Fonts
 $font-weight-thin: 300;
@@ -37,7 +37,7 @@ $spacing-80: 80px;
 // Extras
 $transition: all 0.3s ease-in-out;
 $slow-transition: all 0.4s ease-in-out;
-$fast-transition: all 0.2s ease-in-out;
+$fast-transition: all 0.1s ease;
 
 // Media Sizes
 $media-size-mobile: 1024px;

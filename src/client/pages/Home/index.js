@@ -1,25 +1,14 @@
-/**
- * Dependencies
- */
-import React from "react";
-import { Element } from "react-scroll";
+import React from 'react';
 
-import "./index.scss";
-import View from "../View";
+import './index.scss';
+import Header from '../../components/Header';
+import Layout from '../../components/Layout';
 
-/**
- * Page
- */
 const Home = () => (
-  <View
-    title={'Scale is out now!'}
-    className="p-home"
-  >
-    Hola
-  </View>
+  <main className="home">
+    <Header />
+    <Layout />
+  </main>
 );
 
-/**
- * Export
- */
 export default Home;

@@ -1,6 +1,8 @@
-# Scaletor
+![alt text](./docs/preview.jpg)
 
-This is a Felipe Randolfi Artist Page.
+# scaletor
+
+This is a project of a generator of musical scales for guitar, you can use it on [this page](https://github.io/).
 
 ## Usage
 Run `npm install` for Install all dependencies.

@@ -1,11 +1,11 @@
-import React from "react";
-import Logotype from "../Logotype";
+import React from 'react';
+
+import './index.scss';
+import Logotype from '../../assets/images/general/logotype.svg';
 
 const Header = () => (
   <header className="header">
-    <div className="header__logo">
-      <Logotype />
-    </div>
+    <img className="header__logo" src={Logotype} alt="" />
   </header>
 );
 

@@ -1,22 +1,14 @@
+@import "../../assets/sass/_variables";
+
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   height: 180px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(center, center, row);
 
   &__logo {
-    position: relative;
-    width: 300px;
+    max-width: 360px;
     height: auto;
-
-    svg {
-      width: 100%;
-      height: auto;
-    }
+    @include flex(center, center, row);
   }
 }
