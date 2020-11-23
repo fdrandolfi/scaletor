@@ -1,8 +1,8 @@
-![alt text](./docs/preview.jpg)
+![preview](./preview.jpg)
 
 # scaletor
 
-This is a project of a generator of musical scales for guitar, you can use it on [this page](https://github.io/).
+This is a project of a generator of musical scales for guitar, you can use it on [this page](https://fdrandolfi.github.io/scaletor/).
 
 ## Usage
 Run `npm install` for Install all dependencies.

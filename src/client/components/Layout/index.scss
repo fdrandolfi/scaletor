@@ -23,7 +23,16 @@
     z-index: 1;
   }
 
-  &__column {
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    @include flex(center, center, row);
+    z-index: 2;
+  }
+
+  &__column-3 {
     position: relative;
     width: 30%;
     height: 100%;

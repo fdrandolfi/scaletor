@@ -10,6 +10,7 @@ import Matrix from '../Matrix';
 import Template from '../Template';
 import Selector from '../Selector';
 import SelectorDouble from '../SelectorDouble';
+import Footer from '../Footer';
 
 const Layout = () => {
   const noteOptions = getNoteList();
@@ -48,7 +49,7 @@ const Layout = () => {
   return (
     <section className="layout">
       <div className="layout__top">
-        <div className="layout__column">
+        <div className="layout__column-3">
           <Selector
             id="tunning"
             title="Tunning"
@@ -56,7 +57,7 @@ const Layout = () => {
             onChange={handleTunningChange}
           />
         </div>
-        <div className="layout__column">
+        <div className="layout__column-3">
           <SelectorDouble
             id="scale"
             title="Scale"
@@ -66,7 +67,7 @@ const Layout = () => {
             onChangeScale={handleScaleChange}
           />
         </div>
-        <div className="layout__column">
+        <div className="layout__column-3">
           <Selector
             id="template"
             title="Template"
@@ -85,6 +86,9 @@ const Layout = () => {
           }}
         />
         <Template id={template} />
+      </div>
+      <div className="layout__bottom">
+        <Footer />
       </div>
     </section>
   );
