@@ -25,12 +25,12 @@
     a {
       font-size: 12px;
       font-weight: 800;
-      color: $color-violet-dark;
+      color: $color-gray-300;
       text-align: center;
       padding: 0;
 
       &:hover {
-        color: $color-violet-light;
+        color: $color-gray-400;
       }
     }
   }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { templates, getTemplateList } from '../../structures/templates';
 import { getTunning, getTunningList } from '../../structures/tunnings';
-import getNoteList from '../../structures/notes';
+import { getNoteList } from '../../structures/notes';
 import { getScaleList } from '../../structures/scales';
 
 import './index.scss';
