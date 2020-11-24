@@ -11,7 +11,7 @@
   box-sizing: border-box;
   padding: 20px;
 
-  display: none;
+  @include flex(center, center, column);
 
   &__logotype {
     position: relative;
@@ -29,6 +29,6 @@
 
 @include media(1024px) {
   .unsupported {
-    @include flex(center, center, column);
+    display: none;
   }  
 }
