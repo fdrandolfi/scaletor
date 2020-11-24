@@ -5,6 +5,7 @@ import './index.scss';
 import { templates } from '../../structures/templates';
 import getStringNotes from '../../structures/utils/getStringNotes';
 import { getScale } from '../../structures/scales';
+import { getLabelByNote } from '../../structures/notes';
 
 const Matrix = ({ templateId, tunning, scale }) => {
   const { strings } = templates[templateId];
@@ -25,6 +26,7 @@ const Matrix = ({ templateId, tunning, scale }) => {
                 'matrix__tunning-note',
                 { 'matrix__tunning--six': strings === 6 },
                 { 'matrix__tunning-note--available': availableScaleNotes.includes(stringNotes[0]) },
+                { 'matrix__tunning-note--tonic': getLabelByNote(scale.noteId) === stringNotes[0] },
               )}
               >
                 <span>{stringNotes[0]}</span>
@@ -50,6 +52,7 @@ const Matrix = ({ templateId, tunning, scale }) => {
                     className={classnames(
                       'matrix__string-note',
                       { 'matrix__string-note--available': availableScaleNotes.includes(note) },
+                      { 'matrix__string-note--tonic': note === availableScaleNotes[0] },
                     )}
                   >
                     <span>{note}</span>
