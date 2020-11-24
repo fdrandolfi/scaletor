@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { templates, getTemplateList } from '../../structures/templates';
 import { getTunning, getTunningList } from '../../structures/tunnings';
-import getNoteList from '../../structures/notes';
+import { getNoteList } from '../../structures/notes';
 import { getScaleList } from '../../structures/scales';
 
 import './index.scss';
@@ -10,7 +10,6 @@ import Matrix from '../Matrix';
 import Template from '../Template';
 import Selector from '../Selector';
 import SelectorDouble from '../SelectorDouble';
-import Footer from '../Footer';
 
 const Layout = () => {
   const noteOptions = getNoteList();
@@ -86,9 +85,6 @@ const Layout = () => {
           }}
         />
         <Template id={template} />
-      </div>
-      <div className="layout__bottom">
-        <Footer />
       </div>
     </section>
   );

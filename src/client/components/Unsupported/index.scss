@@ -1,0 +1,34 @@
+@import "../../assets/sass/_variables";
+
+.unsupported {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  color: $color-gray-400;
+  background-color: $color-gray-100;
+  box-sizing: border-box;
+  padding: 20px;
+
+  @include flex(center, center, column);
+
+  &__logotype {
+    position: relative;
+    width: 80%;
+    max-width: 450px;
+    margin-bottom: 12px;
+  }
+
+  &__message {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@include media(1024px) {
+  .unsupported {
+    display: none;
+  }  
+}
