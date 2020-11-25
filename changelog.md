@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] – 2020-11-25
+### Changes
+- Add new 7 strings structure, styles & logic integration.
+- Add new Strandberg Boden 7 template.
+- Add new 7 strings tunnings.
+- Update scales patterns and 6 strings tunnings.
+
 ## [1.2.0] – 2020-11-24
 ### Changes
 - Update styles and integration on Footer, Header, Layout and Matrix components.
