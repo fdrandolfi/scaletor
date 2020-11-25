@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { templates, getTemplateList } from '../../structures/templates';
 import { getTunning, getTunningList } from '../../structures/tunnings';
@@ -12,23 +12,36 @@ import Selector from '../Selector';
 import SelectorDouble from '../SelectorDouble';
 
 const Layout = () => {
-  const noteOptions = getNoteList();
-  const defaultNote = noteOptions[0].value;
-  const [note, setNote] = useState(defaultNote);
+  // Lists
+  const noteList = getNoteList();
+  const scaleList = getScaleList();
+  const templateList = getTemplateList();
 
-  const scaleOptions = getScaleList();
-  const defaultScale = scaleOptions[0].value;
+  // Scale & Note Hooks
+  const defaultNote = noteList[0].value;
+  const defaultScale = scaleList[0].value;
+  const [note, setNote] = useState(defaultNote);
   const [scale, setScale] = useState(defaultScale);
 
-  const templateOptions = getTemplateList();
-  const defaultTemplate = templateOptions[0].value;
+  // Template Hooks
+  const defaultTemplate = templateList[0].value;
   const [template, setTemplate] = useState(defaultTemplate);
 
+  // Initial Tunning
   const templateStrings = templates[template].strings;
   const tunningOptions = getTunningList(templateStrings);
   const defaultTunning = getTunning(tunningOptions[0].value, templateStrings);
   const [tunning, setTunning] = useState(defaultTunning);
 
+  useEffect(() => {
+    // Update Tunning by Template
+    const updateTemplateStrings = templates[template].strings;
+    const updateTunningOptions = getTunningList(updateTemplateStrings);
+    const updatedTunning = getTunning(updateTunningOptions[0].value, updateTemplateStrings);
+    setTunning(updatedTunning);
+  }, [template]);
+
+  // Handles
   const handleNoteChange = (event) => {
     setNote(event.value);
   };
@@ -45,6 +58,7 @@ const Layout = () => {
     setTunning(getTunning(event.value, templateStrings));
   };
 
+  // Return
   return (
     <section className="layout">
       <div className="layout__top">
@@ -54,14 +68,15 @@ const Layout = () => {
             title="Tunning"
             options={tunningOptions}
             onChange={handleTunningChange}
+            // defaultValue={}
           />
         </div>
         <div className="layout__column-3">
           <SelectorDouble
             id="scale"
             title="Scale"
-            optionsNote={noteOptions}
-            optionsScale={scaleOptions}
+            optionsNote={noteList}
+            optionsScale={scaleList}
             onChangeNote={handleNoteChange}
             onChangeScale={handleScaleChange}
           />
@@ -70,7 +85,7 @@ const Layout = () => {
           <Selector
             id="template"
             title="Template"
-            options={templateOptions}
+            options={templateList}
             onChange={handleTemplateChange}
           />
         </div>
