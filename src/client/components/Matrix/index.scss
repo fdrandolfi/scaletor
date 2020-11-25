@@ -79,8 +79,14 @@
       @include frets-childs;
     }
 
+    // 6 string
     &--six {
       height: 16.6666%;
+    }
+
+    // 7 string
+    &--seven {
+      height: 14.2857%;
     }
   }
 
@@ -124,6 +130,11 @@
     &--six {
       height: 16.6666%;
     }
+
+    // 7 string
+    &--seven {
+      height: 14.2857%;
+    }
   }
 
   // Templates
@@ -140,5 +151,13 @@
     width: 82%;
     padding-right: 10px;
     margin-top: -1px;
+  }
+
+  // Templates
+  &__G-SB-BODEN-7 {
+    height: 24.5%;
+    width: 82%;
+    padding-right: 10px;
+    margin-top: 0;
   }
 }

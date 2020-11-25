@@ -25,6 +25,7 @@ const Matrix = ({ templateId, tunning, scale }) => {
               <div className={classnames(
                 'matrix__tunning-note',
                 { 'matrix__tunning--six': strings === 6 },
+                { 'matrix__tunning--seven': strings === 7 },
                 { 'matrix__tunning-note--available': availableScaleNotes.includes(stringNotes[0]) },
                 { 'matrix__tunning-note--tonic': getLabelByNote(scale.noteId) === stringNotes[0] },
               )}
@@ -42,6 +43,7 @@ const Matrix = ({ templateId, tunning, scale }) => {
             <div className={classnames(
               'matrix__string',
               { 'matrix__string--six': strings === 6 },
+              { 'matrix__string--seven': strings === 7 },
               `matrix__string-${i + 1}`,
             )}
             >

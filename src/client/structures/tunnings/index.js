@@ -1,23 +1,32 @@
-import e_standard_6 from './six/e_standard';
+// 6 Strings
+import standard_6 from './six/standard';
 import d_standard_6 from './six/d_standard';
 import drop_d_6 from './six/drop_d';
 import drop_c_6 from './six/drop_c';
 import drop_b_6 from './six/drop_b';
 import drop_b_e_standard_6 from './six/drop_b_e_standard';
-import ethereal_6 from './six/ethereal';
+
+// 7 Strings
+import standard_7 from './seven/standard';
+import drop_a_7 from './seven/drop_a';
+import drop_g_sharp_7 from './seven/drop_g_sharp';
 
 /**
  * Tunnings
  */
 const tunnings = {
   6: {
-    e_standard: e_standard_6,
+    standard: standard_6,
     d_standard: d_standard_6,
     drop_d: drop_d_6,
     drop_c: drop_c_6,
     drop_b: drop_b_6,
     'drop_b_&_e_standard': drop_b_e_standard_6,
-    ethereal: ethereal_6,
+  },
+  7: {
+    standard: standard_7,
+    drop_a: drop_a_7,
+    'drop_g#': drop_g_sharp_7,
   },
 };
 

@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import './index.scss';
 
 const Selector = ({
-  id, title, options, onChange,
+  id, title, options, onChange, defaultValue,
 }) => (
   <div className={classnames(
     'selector',
@@ -16,7 +16,7 @@ const Selector = ({
       {title}
     </p>
     <Select
-      defaultValue={options[0]}
+      defaultValue={defaultValue || options[0]}
       className="selector__select"
       options={options}
       onChange={onChange}
