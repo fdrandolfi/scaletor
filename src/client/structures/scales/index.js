@@ -5,8 +5,8 @@ import pentatonic_minor from './patterns/pentatonic_minor';
 import blues_major from './patterns/blues_major';
 import blues_minor from './patterns/blues_minor';
 import bebop from './patterns/bebop';
+import spanish from './patterns/spanish';
 import arabian from './patterns/arabian';
-import persian from './patterns/persian';
 import egyptian from './patterns/egyptian';
 
 import getScaleNotesByPattern from '../utils/getScaleNotesByPattern';
@@ -22,8 +22,8 @@ const scalePatterns = {
   blues_major,
   blues_minor,
   bebop,
+  spanish,
   arabian,
-  persian,
   egyptian,
 };
 
