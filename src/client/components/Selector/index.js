@@ -16,10 +16,10 @@ const Selector = ({
       {title}
     </p>
     <Select
-      defaultValue={defaultValue || options[0]}
       className="selector__select"
       options={options}
       onChange={onChange}
+      defaultValue={defaultValue || options[0]}
     />
   </div>
 );
