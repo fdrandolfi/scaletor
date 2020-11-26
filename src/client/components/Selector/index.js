@@ -15,11 +15,11 @@ const Selector = ({
     <p className="selector__title">
       {title}
     </p>
-    <Select
-      defaultValue={defaultValue || options[0]}
+    <Selector
       className="selector__select"
       options={options}
       onChange={onChange}
+      defaultValue={defaultValue || options[0]}
     />
   </div>
 );

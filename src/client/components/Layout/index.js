@@ -69,7 +69,6 @@ const Layout = () => {
             title="Tunning"
             options={tunningOptions}
             onChange={handleTunningChange}
-            defaultValue={{ label: 'n', value: 'standard' }}
           />
         </div>
         <div className="layout__column-3">
