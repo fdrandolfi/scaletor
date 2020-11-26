@@ -15,7 +15,7 @@ const Selector = ({
     <p className="selector__title">
       {title}
     </p>
-    <Selector
+    <Select
       className="selector__select"
       options={options}
       onChange={onChange}
