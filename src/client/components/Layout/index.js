@@ -10,6 +10,7 @@ import Matrix from '../Matrix';
 import Template from '../Template';
 import Selector from '../Selector';
 import SelectorDouble from '../SelectorDouble';
+import NotesHistory from '../NotesHistory';
 
 const Layout = () => {
   // Lists
@@ -68,7 +69,7 @@ const Layout = () => {
             title="Tunning"
             options={tunningOptions}
             onChange={handleTunningChange}
-            // defaultValue={}
+            defaultValue={{ label: 'n', value: 'standard' }}
           />
         </div>
         <div className="layout__column-3">
@@ -89,6 +90,13 @@ const Layout = () => {
             onChange={handleTemplateChange}
           />
         </div>
+      </div>
+      <div className="layout__bottom">
+        <div className="layout__column-3">
+          <NotesHistory />
+        </div>
+        <div className="layout__column-3" />
+        <div className="layout__column-3" />
       </div>
       <div className="layout__center">
         <Matrix
