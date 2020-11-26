@@ -12,11 +12,11 @@
 
     span {
       position: relative;
-      width: 26px;
-      height: 26px;
+      width: 24px;
+      height: 24px;
       @include flex(center, center, row);
       border-radius: 50%;
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 800;
       margin-right: 12px;
       box-shadow: 0 0 0 2px rgba($color-gray-200, 0.5);
