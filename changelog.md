@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.4.0] – 2020-11-26
+### Changes
+- Add NotesHistory component.
+- Update styles on layout and matrix.
+
 ## [1.3.0] – 2020-11-25
 ### Changes
 - Add new 7 strings structure, styles & logic integration.
