@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.5.0] – 2020-11-27
+### Changes
+- Add new Fender Vintera 60s Stratocaster template.
+
 ## [1.4.0] – 2020-11-26
 ### Changes
 - Add NotesHistory component.
