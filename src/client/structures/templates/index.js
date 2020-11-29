@@ -1,7 +1,11 @@
+// 6 Strings
 import img_G_PRS_C24_6 from '../../assets/images/templates/G-PRS-C24-6.png';
 import img_G_GIBSON_LP_STD_6 from '../../assets/images/templates/G-GIBSON-LP-STD-6.png';
 import img_G_FENDER_STRATO_6 from '../../assets/images/templates/G-FENDER-STRATO-6.png';
+
+// 7 Strings
 import img_G_SB_BODEN_7 from '../../assets/images/templates/G-SB-BODEN-7.png';
+import img_G_SOLAR_TAB_7 from '../../assets/images/templates/G-SOLAR-TAB-7.png';
 
 /**
  * Templates
@@ -30,6 +34,12 @@ const templates = {
     strings: 7,
     frets: 24,
     imgSrc: img_G_SB_BODEN_7,
+  },
+  'G-SOLAR-TAB-7': {
+    label: 'Solar Type AB 7',
+    strings: 7,
+    frets: 24,
+    imgSrc: img_G_SOLAR_TAB_7,
   },
 };
 

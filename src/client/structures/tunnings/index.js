@@ -3,6 +3,7 @@ import standard_6 from './six/standard';
 import d_standard_6 from './six/d_standard';
 import drop_d_6 from './six/drop_d';
 import drop_c_6 from './six/drop_c';
+import drop_c_sharp_6 from './six/drop_c_sharp';
 import drop_b_6 from './six/drop_b';
 import drop_b_e_standard_6 from './six/drop_b_e_standard';
 
@@ -20,6 +21,7 @@ const tunnings = {
     d_standard: d_standard_6,
     drop_d: drop_d_6,
     drop_c: drop_c_6,
+    'drop_c#': drop_c_sharp_6,
     drop_b: drop_b_6,
     'drop_b_&_e_standard': drop_b_e_standard_6,
   },

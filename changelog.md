@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.6.0] – 2020-11-28
+### Changes
+- Add new Solar Type AB 6 template.
+- Add new tunning drop c# for 6 strings.
+- Update general styles.
+
 ## [1.5.0] – 2020-11-27
 ### Changes
 - Add new Fender Vintera 60s Stratocaster template.
